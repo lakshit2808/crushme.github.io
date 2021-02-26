@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrushMe</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="home">
+        <nav class="desktop-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#about-me">About Us</a>
+            </li>
+            <li>
+              <a href="#work">Our Collections</a>
+            </li>
+            <li>
+              <a href="#testimonials">The Founder</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+          </div>
+        </nav>
+
+        <div class="mobile-menu-container">
+          <ul>
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#work">My Work</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-container">
+          <div class="left">
+            <p class="i-am">
+              Welcome to
+            </p>
+            <h2>
+              CrushMe,
+            </h2>
+            <h2>
+              .in
+            </h2>
+
+            <a href="#contact" class="btn">Contact</a>
+
+            <div class="social-icons">
+              <a href="https://twitter.com/lakshit_28">
+                <img src="images/twitter-logo.png" alt="" />
+              </a>
+
+              <a href="https://www.linkedin.com/in/lakshit2808/">
+                <img src="images/dribbble-logo.png" alt="" />
+              </a>
+
+              <a href="https://www.instagram.com/crushme.in/">
+                <img src="images/instagram-logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section id="about-me">
+        <h2>About Me</h2>
+        <div class="section-content">
+          <p>
+            Welcome to CrushMe, your number one source for all things you want. We're dedicated to giving you the best
+            shopping experience, with a focus on product quality, Customer Support, Free and Fast Delivery.
+          </p>
+          <p>
+            Founded in 2021 by Lakshit, CrushMe has come a long way from its beginnings in Haryana, India. When Lakshit first started out, his passion for serving the best quality products drove him to build this app so that CrushMe can offer you the best products. We now serve customers all over the world and are thrilled that we're able to turn our passion into our own app/website.
+          </p>
+          <p>
+            We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+
+
+            <br>Sincerely,<br>
+            Lakshit
+          </p>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Collections</h2>
+
+        <div class="section-content">
+          <div class="work-container">
+            <img src="images/project1.png" alt="" />
+            <img src="images/project2.png" alt="" />
+            <img src="images/project3.png" alt="" />
+            <img class="mobile-hide" src="images/project4.png" alt="" />
+            <img class="mobile-hide" src="images/project5.png" alt="" />
+            <img class="mobile-hide" src="images/project6.png" alt="" />
+          </div>
+          <a href="https://myshopprime.com/crushme/fafdxzp" class="btn light">View All Collections</a>
+        </div>
+      </section>
+
+      <div id="testimonials"></div>
+
+      <section class="testimonials-section">
+        <img class="quote-icon" src="images/quote-icon.png" alt="" />
+        Junior developer, Enthusiastic about AI, IoT, DS, Machine learning, Robotics. Believe in Collaboration rather than Competition because talent wins games, but teamwork and intelligence win championships. Always looking for new projects and willing to work. I aim for full immersion in as many fields and projects as possible. This is why I am into AI: it's the great denominator that will add to every field.
+        </p>
+
+        <div class="says">
+          <img src="images/testimonial1.png" alt="" />
+          <h3>Founder</h3>
+          <p class="company-name">Lakshit</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="section-content">
+          <div class="email">
+            <img src="images/mail-icon.png" alt="" />
+            <div class="contact-text">lakshiiit@gmail.com</div>
+          </div>
+
+
+
+          <div class="address">
+            <img src="images/address-logo.png" alt="" />
+            <div class="contact-text">
+              V.P.O Kunjpura Karnal Haryana, India
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileMenuContainer = document.querySelector(
+        ".mobile-menu-container"
+      );
+      const mobileMenuItems = document.querySelectorAll(
+        ".mobile-menu-container ul li a"
+      );
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("active");
+      });
+
+      mobileMenuItems.forEach((i) => {
+        i.addEventListener("click", function () {
+          mobileMenuContainer.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
